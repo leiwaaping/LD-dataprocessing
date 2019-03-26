@@ -30,6 +30,9 @@ max distance between loci is : 2000
 ################### counting candidate loci #####################
 Run time is 20 s
 
+Can't find rs10530996!
+Can't find rs10531710!
+Can't find rs10537611!
 ```
 
 
@@ -63,3 +66,20 @@ rs945708        1       162118901       C       C       T       C       T       
 rs945710        1       162139270       T       C       T       T       T       C       C
 
 ```
+
+
+## Newly updata ##
+- 1. compatible multiple expressions of chromosomes in vcf files，eg. chr1/Chr1/CHR1/1 and sex chromosome chrM chrY chrX
+```
+rs      chr     position        ref             vcf/5.vcf       vcf/6.vcf       vcf/test.vcf    vcf/2.vcf       vcf/4.vcf       main_allele
+rs945706        1       162076552       C       A       C       C       C       A       A
+rs945707        1       162076770       T       T       C       T       T       C       C
+rs945783        M       162118901       C       C       T       C       T       T       T
+rs944329        M       162139270       T       C       T       T       T       C       C
+
+```
+
+- 2.Indicates missing SNP
+since the info for SNP are extracted from vcf files. If some SNP didnot exist in every vcfs,this program will print them out on the screem. The other agencie needs to delete missing SNP offline, for further Interactive LD analysis.
+
+
