@@ -69,7 +69,7 @@ rs945710        1       162139270       T       C       T       T       T       
 
 
 ## Newly updata ##
-- 1. compatible multiple expressions of chromosomes in vcf files，eg. chr1/Chr1/CHR1/1 and sex chromosome chrM chrY chrX
+- 1 . compatible multiple expressions of chromosomes in vcf files，eg. chr1/Chr1/CHR1/1 and sex chromosome chrM chrY chrX
 ```
 rs      chr     position        ref             vcf/5.vcf       vcf/6.vcf       vcf/test.vcf    vcf/2.vcf       vcf/4.vcf       main_allele
 rs945706        1       162076552       C       A       C       C       C       A       A
@@ -79,7 +79,7 @@ rs944329        M       162139270       T       C       T       T       T       
 
 ```
 
-- 2.Indicates missing SNP
+- 2 .Indicates missing SNP
 since the info for SNP are extracted from vcf files. If some SNP didnot exist in every vcfs,this program will print them out on the screem. The other agencie needs to delete missing SNP offline, for further Interactive LD analysis.
 
 
